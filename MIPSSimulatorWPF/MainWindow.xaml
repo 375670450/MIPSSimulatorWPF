@@ -1,0 +1,151 @@
+﻿<Window x:Class="MIPSSimulatorWPF.MainWindow" x:Name="mainwindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MIPSSimulatorWPF"
+		xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+    	mc:Ignorable="d"
+        Title="{Binding Path=WindowTitle, Mode=OneWay}" Height="721.6" Width="896" SizeToContent="WidthAndHeight" PreviewKeyDown="mainwindow_PreviewKeyDown" >
+
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize"	Value="16"/>
+            <Setter Property="FontFamily" Value="Courier New"/>
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
+        </Style>
+    </Window.Resources>
+
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.New" Executed="NewCommand_Executed"></CommandBinding>
+        <CommandBinding Command="ApplicationCommands.Open" Executed="OpenCommand_Executed"></CommandBinding>
+        <CommandBinding Command="ApplicationCommands.Save" Executed="SaveCommand_Executed"></CommandBinding>
+    </Window.CommandBindings>
+
+    <Grid Background="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionBrushKey}}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition MinHeight="30" MaxHeight="30"></RowDefinition>
+            <RowDefinition MinHeight="500" ></RowDefinition>
+            <RowDefinition Height="Auto" ></RowDefinition>
+            <RowDefinition MinHeight="100" MaxHeight="150"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Menu x:Name="menu" Grid.Row="0" FontSize="13.333" Height="26" VerticalAlignment="Top" >
+            <MenuItem Header="_File">
+                <MenuItem Header="_NewFile" InputGestureText="Ctrl+N" Command="ApplicationCommands.New"/>
+                <MenuItem Header="_LoadFile" InputGestureText="Ctrl+O" Command="ApplicationCommands.Open"/>
+                <MenuItem Header="_Save" InputGestureText="Ctrl+S" Command="ApplicationCommands.Save"/>
+
+                <Separator/>
+                <MenuItem Header="_SaveAs" Click="MenuItem_Click">
+                    <MenuItem Header="_Print" Command="ApplicationCommands.Print"/>
+                </MenuItem>
+				<Separator/>
+				<MenuItem Header="_Exit" InputGestureText="Alt+F4" Command="ApplicationCommands.Close"/>
+            </MenuItem>
+            <MenuItem x:Name="EditMenu" Header="_Edit" >
+                <MenuItem Header="_Undo" InputGestureText="Ctrl+Z" Command="ApplicationCommands.Undo"/>
+                <MenuItem Header="_Cut" InputGestureText="Ctrl+X" Command="ApplicationCommands.Cut"/>
+                <MenuItem Header="_Copy" InputGestureText="Ctrl+C" Command="ApplicationCommands.Copy"/>
+                <MenuItem Header="_Paste" InputGestureText="Ctrl+V" Command="ApplicationCommands.Paste"/>
+                <MenuItem Header="_Delete" InputGestureText="Del" Command="ApplicationCommands.Delete"/>
+                <MenuItem Header="_Find" InputGestureText="Ctrl+F" Command="ApplicationCommands.Find"/>
+                <MenuItem Header="_Replace" InputGestureText="Ctrl+H" Command="ApplicationCommands.Replace"/>
+                <MenuItem Header="_SelectAll" InputGestureText="Ctrl+A" Command="ApplicationCommands.SelectAll"/>
+            </MenuItem>
+            <MenuItem Header="_Build">
+                <MenuItem Header="Assembly" Click="MenuItem_Click"/>
+                <MenuItem Header="COE" Click="MenuItem_Click"/>
+                <MenuItem Header="Bin" Click="MenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Simulator">
+                <MenuItem Header="_Run/Continue" InputGestureText="F5"  Click="MenuItem_Click"/>
+                <MenuItem Header="_Reinitialize" InputGestureText="F6" Click="MenuItem_Click"/>
+                <MenuItem Header="_Stop" InputGestureText="F7" Click="MenuItem_Click"/>
+                <MenuItem Header="_Single Step" InputGestureText="F8" Click="MenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Help">
+                <MenuItem Header="_About" Click="MenuItem_Click"></MenuItem>
+            </MenuItem >
+        </Menu>
+        <Grid Name="Icons" Grid.Row="1" MaxWidth="100" HorizontalAlignment="Left" Margin="0,0,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+			</Grid.ColumnDefinitions>
+			<MenuItem Header="_Run/Continue" Click="MenuItem_Click" Grid.Column="0" ToolTip="Run/Continue/F5">
+                <MenuItem.Icon>
+                    <Image Source="./ico/run.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="_Reinitialize" Click="MenuItem_Click" Grid.Column="1" ToolTip="Reinitialize/F6">
+                <MenuItem.Icon>
+                    <Image Source="./ico/reinit.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+
+            <MenuItem Header="_Stop" Click="MenuItem_Click" Grid.Column="2" ToolTip="Stop/F7">
+                <MenuItem.Icon>
+                    <Image Source="./ico/stop.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="_Single Step" Click="MenuItem_Click"  Grid.Column="3" ToolTip="Single Step/F8">
+                <MenuItem.Icon>
+                    <Image Source="./ico/next.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+			</Grid>
+        
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MinWidth="200" MaxWidth="300" ></ColumnDefinition>
+                <ColumnDefinition Width="5"></ColumnDefinition>
+                <ColumnDefinition MinWidth="500" ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBox  x:Name="RegisterStatusTextBox" Grid.Column="0" HorizontalAlignment="Stretch" Margin="10" 
+					 MinWidth="200" TextWrapping="Wrap"  IsReadOnly="True" Grid.ColumnSpan="2"
+					 Text="{Binding Path=RegistersOutput, Mode=OneWay}"/>
+
+            <GridSplitter Grid.Column="1" Width="5" HorizontalAlignment="Center" VerticalAlignment="Stretch" ShowsPreview="True"/>
+            <TabControl Margin="10" Grid.Column="2" MinHeight="20" FontSize="15" BorderThickness="0" SelectionChanged="TabControl_SelectionChanged" >
+                <TabItem x:Name="ViewText" Header="Text" Width="50">
+                    <RichTextBox x:Name="TextRichTextBox"   HorizontalAlignment="Stretch" IsReadOnly="True" MinWidth="400" 
+								 ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                        <RichTextBox.Resources>
+                            <Style TargetType="Paragraph">
+                                <Setter Property="Margin" Value="0"/>
+                            </Style>
+                        </RichTextBox.Resources>
+                    </RichTextBox>
+                </TabItem>
+                <TabItem x:Name="ViewData" Header="Data" Width="50" BorderThickness="0" Height="26" Margin="0,-2,0,0" VerticalAlignment="Top">
+                    <TextBox x:Name="DataTextBox"   HorizontalAlignment="Stretch" TextWrapping="Wrap" 
+							 MinWidth="400" IsReadOnly="True" Text="{Binding Path=DataOutput, Mode=OneWay}" />
+                </TabItem>
+                <TabItem x:Name="ViewEditor" Header="Editor">
+                    <RichTextBox ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto"
+								 Name="EditorRichBox" AcceptsReturn="True" AcceptsTab="True" TextChanged="EditorRichBox_TextChanged" >
+                        <RichTextBox.Resources>
+                            <Style TargetType="Paragraph">
+                                <Setter Property="Margin" Value="0"/>
+                            </Style>
+						</RichTextBox.Resources>
+					</RichTextBox>    
+				</TabItem>
+            </TabControl>
+        </Grid>
+
+        <GridSplitter Grid.Row="3" Height="5" HorizontalAlignment="Stretch" VerticalAlignment="Center" ShowsPreview="True"/>
+
+        <Grid Grid.Row="4">
+            <TextBox x:Name="LogOutputTextBox" Margin="10,10,10,10"  TextWrapping="Wrap" 
+					 Foreground="#FF2DC500" IsReadOnly="True" />
+
+        </Grid>
+    </Grid>
+	
+</Window>
+
+	

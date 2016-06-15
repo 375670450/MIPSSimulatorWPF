@@ -1,0 +1,12 @@
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSAssembler\bin\Release\MIPSAssembler.exe.config
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSAssembler\bin\Release\MIPSAssembler.exe
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSAssembler\bin\Release\MIPSAssembler.pdb
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSAssembler\obj\Release\MIPSAssembler.exe
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSAssembler\obj\Release\MIPSAssembler.pdb
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSAssembler\obj\Release\MIPSAssembler.csprojResolveAssemblyReference.cache
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF - Copy\MIPSAssembler\obj\Release\MIPSAssembler.csprojResolveAssemblyReference.cache
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF - Copy\MIPSAssembler\obj\Release\MIPSAssembler.exe
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF - Copy\MIPSAssembler\obj\Release\MIPSAssembler.pdb
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF - Copy\MIPSAssembler\bin\Release\MIPSAssembler.exe.config
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF - Copy\MIPSAssembler\bin\Release\MIPSAssembler.exe
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF - Copy\MIPSAssembler\bin\Release\MIPSAssembler.pdb

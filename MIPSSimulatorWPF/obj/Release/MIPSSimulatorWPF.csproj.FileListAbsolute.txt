@@ -1,0 +1,32 @@
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSSimulatorWPF\bin\Release\MIPSSimulatorWPF.exe.config
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSSimulatorWPF\bin\Release\MIPSSimulatorWPF.exe
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSSimulatorWPF\bin\Release\MIPSSimulatorWPF.pdb
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSSimulatorWPF\bin\Release\MIPSAssembler.exe
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSSimulatorWPF\bin\Release\MIPSAssembler.pdb
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSSimulatorWPF\obj\Release\MIPSSimulatorWPF.csprojResolveAssemblyReference.cache
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSSimulatorWPF\obj\Release\MainWindow.g.cs
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSSimulatorWPF\obj\Release\App.g.cs
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSSimulatorWPF\obj\Release\MIPSSimulatorWPF_MarkupCompile.cache
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSSimulatorWPF\obj\Release\MIPSSimulatorWPF_MarkupCompile.lref
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSSimulatorWPF\obj\Release\MainWindow.baml
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSSimulatorWPF\obj\Release\MIPSSimulatorWPF.g.resources
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSSimulatorWPF\obj\Release\MIPSSimulatorWPF.Properties.Resources.resources
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSSimulatorWPF\obj\Release\MIPSSimulatorWPF.csproj.GenerateResource.Cache
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSSimulatorWPF\obj\Release\MIPSSimulatorWPF.exe
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSSimulatorWPF\obj\Release\MIPSSimulatorWPF.pdb
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF - Copy\MIPSSimulatorWPF\bin\Release\MIPSSimulatorWPF.exe.config
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF - Copy\MIPSSimulatorWPF\obj\Release\MIPSSimulatorWPF.exe
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF - Copy\MIPSSimulatorWPF\obj\Release\MIPSSimulatorWPF.pdb
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF - Copy\MIPSSimulatorWPF\obj\Release\MIPSSimulatorWPF.csprojResolveAssemblyReference.cache
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF - Copy\MIPSSimulatorWPF\obj\Release\MainWindow.g.cs
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF - Copy\MIPSSimulatorWPF\obj\Release\App.g.cs
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF - Copy\MIPSSimulatorWPF\obj\Release\MIPSSimulatorWPF_MarkupCompile.cache
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF - Copy\MIPSSimulatorWPF\obj\Release\MIPSSimulatorWPF_MarkupCompile.lref
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF - Copy\MIPSSimulatorWPF\bin\Release\MIPSSimulatorWPF.exe
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF - Copy\MIPSSimulatorWPF\bin\Release\MIPSSimulatorWPF.pdb
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF - Copy\MIPSSimulatorWPF\bin\Release\MIPSAssembler.exe
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF - Copy\MIPSSimulatorWPF\bin\Release\MIPSAssembler.pdb
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF - Copy\MIPSSimulatorWPF\obj\Release\MainWindow.baml
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF - Copy\MIPSSimulatorWPF\obj\Release\MIPSSimulatorWPF.g.resources
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF - Copy\MIPSSimulatorWPF\obj\Release\MIPSSimulatorWPF.Properties.Resources.resources
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF - Copy\MIPSSimulatorWPF\obj\Release\MIPSSimulatorWPF.csproj.GenerateResource.Cache

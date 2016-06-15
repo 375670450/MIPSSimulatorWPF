@@ -1,0 +1,6 @@
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSAssembler\bin\Debug\MIPSAssembler.exe.config
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSAssembler\bin\Debug\MIPSAssembler.exe
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSAssembler\bin\Debug\MIPSAssembler.pdb
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSAssembler\obj\Debug\MIPSAssembler.csprojResolveAssemblyReference.cache
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSAssembler\obj\Debug\MIPSAssembler.exe
+C:\Users\37567\Documents\Visual Studio 2015\Projects\MIPSSimulatorWPF\MIPSAssembler\obj\Debug\MIPSAssembler.pdb

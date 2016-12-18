@@ -234,10 +234,10 @@ namespace MIPSSimulatorWPF {
 
 					if ( ext == "coe" ) {
 						using ( StreamWriter file = new StreamWriter(filename, true) ) {
-							file.WriteLine("memory_initialization_radix=2;");
+							file.WriteLine("memory_initialization_radix=16;");
 							file.WriteLine("memory_initialization_vector=");
 							foreach ( var line in _displayInfo.InstCodeList ) {
-								file.WriteLine(line + ",");
+								file.WriteLine(MIPSAssembler.Utils.NumtoHexStr(Convert.ToUInt32(line, 2), 8) + ",");
 							}
 						}
 					} else if ( ext == "asm" ) {

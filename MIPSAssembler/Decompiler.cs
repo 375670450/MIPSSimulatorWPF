@@ -18,10 +18,13 @@ namespace MIPSAssembler {
 
 		public static string Decode(string inst) {
 
+			if ( inst.Length < 8 || inst.Length > 32 )
+				return "INVALID LENGTH";
+
 			if( inst.Length * 4 == 32 || inst.ToUpper().StartsWith("0X") ) {       // hex
 				inst = Utils.DectoBin(Convert.ToInt32(inst, 16), 32);
 			}
-
+			
 			string result = "", opcode = inst.Substring(0, 6);
 			var type = Utils.GetInstType(opcode);
 			try {

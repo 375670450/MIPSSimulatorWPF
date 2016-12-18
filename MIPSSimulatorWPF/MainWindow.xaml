@@ -37,10 +37,10 @@
                 <MenuItem Header="_Save" InputGestureText="Ctrl+S" Command="ApplicationCommands.Save"/>
 
                 <Separator/>
-                <MenuItem Header="_SaveAs" Click="MenuItem_Click">
-                    <MenuItem Header="_Print" Command="ApplicationCommands.Print"/>
-                </MenuItem>
-				<Separator/>
+                <MenuItem Header="_SaveAs" Click="MenuItem_Click"/>
+                <MenuItem Header="_Print" Command="ApplicationCommands.Print"/>
+
+                <Separator/>
 				<MenuItem Header="_Exit" InputGestureText="Alt+F4" Command="ApplicationCommands.Close"/>
             </MenuItem>
             <MenuItem x:Name="EditMenu" Header="_Edit" >
